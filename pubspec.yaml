@@ -3,6 +3,8 @@ description: Serialize almost everything you ever need! Supports serializing Mat
 version: 0.0.5
 homepage: https://github.com/aswinmurali-io/osum_serializable
 
+publish_to: none
+
 environment:
   sdk: '>=2.17.0 <3.0.0'
   flutter: ">=1.17.0"
@@ -11,6 +13,10 @@ dependencies:
   flutter:
     sdk: flutter
   json_annotation:
+    git:
+      url: https://github.com/definev/json_serializable.dart.git
+      ref: master
+      path: json_annotation
   uuid: ^3.0.6
 
 dev_dependencies:
@@ -19,6 +25,5 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   intl: ^0.17.0
-  json_serializable:
 
 flutter:
